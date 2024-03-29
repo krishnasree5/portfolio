@@ -4,111 +4,129 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Krishna Sree</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <div class="header">
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#connect">Connect</a></li>
-        </ul> 
-    </div>
-    <div class="content">
+    <div class="container">
+        <div id="header">
+            <ul>
+                <li><a href="#home"><i class="bi bi-house icons"></i></a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>            
+            </ul>
+        </div>
+
         <div id="home">
-            <div class="intro">
-                <p>Hi,I am Krishna Sree.I am an aspiring Full-stack Web Developer.</p>
-                <button id="connect-btn" type="button" onclick="scrollConnect()">Contact Details</button>
-            </div>
-            <div class="profilepic">
-                <img src="./images/profilepic.jpg">
+            <div class="content">
+                <div>
+                    <p id="intro">Hi, <br> I am Krishna Sree</p>
+                    <p id="text">I am an aspiring Backend Developer</p>
+                </div>
+                <div>
+                    <img src="./images/profilepic.jpg" alt="my profile picture">
+                </div>
             </div>
         </div>
+
+        <div id="about">
+            <h1>About Me</h1>
+            <p>
+                Hello. My name is Krishna Sree, and my goal is to become a skilled and proficient backend 
+                developer.<br>
+                Ever since I was introduced to programming, I've been captivated by the inner workings of 
+                applications and the logic that drives them. The idea of building robust and scalable systems that 
+                power the functionality and user experience of websites and applications has become a passion of 
+                mine.<br>
+                While I'm still in the process of honing my skills and gaining experience, I am driven by a 
+                strong desire to utilize all of my knowledge and abilities to build high-quality, efficient 
+                backend applications. I'm eager to contribute to meaningful projects that not only challenge me 
+                but also make a positive impact.
+            </p>
+        </div>
+
         <div id="skills">
             <h1>My Skills</h1>
             <div class="languages">
-                <h3>Programming Languages</h3>
+                <h2>Programming Languages</h2>
                 <img src="./images/python-logo.png">
                 <img src="./images/c-logo.png">
             </div>
-            <div class="web-development">
-                <h3>Web Development</h3>
+            <div class="front-end">
+                <h2>Frontend Development</h2>
                 <img src="./images/html-logo.png">
                 <img src="./images/css-logo.png">
                 <img src="./images/bootstrap-logo.png">
                 <img src="./images/js-logo.png">
                 <img src="./images/jquery-logo.png">
+                <img src="./images/react-logo.png">
+            </div>
+            <div class="back-end">
+                <h2>Backend Development</h2>
                 <img src="./images/nodejs-logo.png">
                 <img src="./images/npm-logo.png">
                 <img src="./images/expressjs-logo.png">
                 <img src="./images/ejs-logo.png">
                 <img src="./images/sql-logo.png">
                 <img src="./images/postgres-logo.png">
-                <img src="./images/react-logo.png">
             </div>
             <div class="softwares-tools">
-                <h3>Softwares and Tools</h3>
+                <h2>Softwares and Tools</h2>
                 <img src="./images/vscode-logo.png">
                 <img src="./images/git-logo.png">
                 <img src="./images/github-logo.png">
             </div>
         </div>
+
         <div id="projects">
             <h1>Projects</h1>
-            <div id="projects-container">
-                <div>
-                    <h3>cat-fact</h3>
-                    <h4>Languages used: ejs,css,javascript.</h4>
-                    <h4>
+            <div class="project-container">
+                <div id="anime-companion">
+                    <h2>Anime Companion</h2>
+                    <p>Languages used: HTML, CSS, React.</p>
+                    <p>Description: Anime Library to discover anime!</p>
+                    <a href="https://github.com/krishnasree5/anime" target="_blank">
+                        <p>Github Repo: <i class="bi bi-box-arrow-up-right"></i></p>                            
+                    </a>
+                </div>
+
+                <div id="permalist">
+                    <h2>Permalist</h2>
+                    <p>Languages used: HTML, CSS, Nodejs, Express, ejs, PostgreSQL.</p>
+                    <p>
+                        Description: Todo list using Node, Express and PostgreSQL.
+                    </p>
+                    <a href="https://github.com/krishnasree5/permalist" target="_blank">
+                        <p>Github Repo: <i class="bi bi-box-arrow-up-right"></i></p>                            
+                    </a>
+                </div>
+                
+                <div id="cat-fact">
+                    <h2>Cat Fact</h2>
+                    <p>Languages used: HTML, CSS, Nodejs, Express, ejs.</p>
+                    <p>
                         Description: A webpage which shows random images and facts of cats.
-                        It uses API's to get access to the facts and images.</h4>
+                        It uses API's to get access to the facts and images.
+                    </p>
+                    <a href="https://github.com/krishnasree5/cat-fact" target="_blank">
+                        <p>Github Repo: <i class="bi bi-box-arrow-up-right"></i></p>                            
+                    </a>
                 </div>
-                <div>
-                    <h3>to-do list</h3>
-                    <h4>Languages used: html,css,javascript.</h4>
-                    <h4>
-                        Description: A to-do list where you can add and remove tasks and 
-                        also save the changes you make.
-                    </h4>
+                <!-- <div id="p4">
+
                 </div>
-                <div>
-                    <h3>data-to-graph converter</h3>
-                    <h4>Languages used: python.</h4>
-                    <h4>
-                        Description: Creates a graph(bargraph, histogram, piechart) 
-                        based on user input.
-                    </h4>
+                <div id="p5">
+
                 </div>
-                <div>
-                    <h3>quotes api</h3>
-                    <h4>Languages used: javascript.</h4>
-                    <h4>Description: an api to get access to quotes and their author.</h4>
-                </div>
+                <div id="p6">
+
+                </div> -->
             </div>
-            <a href="https://github.com/krishnasree5" target="_blank">
-                <p id="github-link">See more in my github profile</p>
-            </a>
+            <button id="show">Show More <span id="arrow"><i class="bi bi-chevron-double-down"></i></span></button>
+
         </div>
-        <div id="connect">
-            <h1>Connect</h1>
-            <div id="connect-info">
-                <p>Mobile Number: +91 9XXXXXXXXX</p>
-                <p>Email: gkrishnasree5@gmail.com</p>
-            </div>
-            <div id="links">
-                <a href="https://github.com/krishnasree5" target="_blank"><img src="./images/github-logo.png">Github</a>
-                <a href="www.linkedin.com/in/krishna-sree-921aa62a4" target="_blank"><img src="./images/linkedin-logo.jpg">Linkedin</a>
-                <a href="https://twitter.com/gkrishnasree5" target="_blank"><img src="./images/x-logo.jpg">X</a>
-            </div>
-        </div>
+
     </div>
-    <div class="footer">
-        <p>Made by Krishna Sree 👽</p>
-    </div>
-    <script src="script.js"></script>
 </body>
 </html>
