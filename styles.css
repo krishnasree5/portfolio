@@ -1,10 +1,78 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     padding: 0;
 }
 
-h1 {
+h1, h2 {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
     text-align: center;
+}
+
+p {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: normal;    
+}
+
+.header {
+    margin: 0;
+    width: 100vw;
+    height: 5rem;
+    position: sticky; 
+    top: 0;
+    list-style-type: none;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+}
+
+.header a {
+    color: white;
+    text-decoration: none;
+}
+
+.home {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+    color: white;
+}
+
+.content {
+    padding: 3rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+#intro {
+    text-align: left;
+    font-size: 4rem;
+    font-weight: 500;
+}
+
+#text {
+    text-align: left;
+}
+
+.content p {
+    font-size: 3rem;
+}
+
+.content img {
+    width: 20rem;
+    height: 20rem;
 }
 
 .container {
@@ -14,43 +82,14 @@ h1 {
     gap: 3rem;
 }
 
-#header {
-    background-color: red;
-    font-size: 1.25rem;
-    height: 4rem;
-}
-
-#header ul {    
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    list-style-type: none; 
-}
-
-a {
-    color: black;
-    text-decoration: none;
-}
-
-.content {
-    background-color: black;
+#about {
     padding: 3rem;
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
-    flex-wrap: wrap;
+    font-size: 2rem;
 }
 
-.content > div {
-    background-color: red;
-}
-
-.content img {
-    width: 20rem;
-    height: 20rem;
-}
-
-#skills > * {
+#skills {
+    font-size: 2rem;
+    padding: 3rem;
     text-align: center;
 }
 
@@ -66,6 +105,7 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-size: 1.75rem;
 }
 
 .project-container {
@@ -84,17 +124,36 @@ a {
     flex-wrap: wrap;
 }
 
+.project-container a {
+    color: black;
+    text-decoration: none;
+}
+
+.link {
+    color: darkslateblue;
+}
+
 #show {
     width: 10rem;
     font-size: 1rem;
     padding: 0.75rem;
-    border: 2px solid #656bc0;
+    border: 2px solid #272727;
     background-color: white;
-    color: #656bc0;
     border-radius: 30px;
 }
 
 #show:hover {
-    background-color: #656bc0;
+    background-color: #272727;
     color: white;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.contact i {
+    color: black;
+    font-size: 2rem;
 }
