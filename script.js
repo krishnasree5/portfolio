@@ -41,9 +41,7 @@ function createProjectElement(project) {
 
 function addAdditionalProjects() {
 
-    console.log("calling event function");
     projectsArray.forEach(project => {
-        console.log(project);
         const projectElement = createProjectElement(project);
         projectContainer.appendChild(projectElement);
     });
