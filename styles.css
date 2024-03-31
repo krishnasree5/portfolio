@@ -1,5 +1,6 @@
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
 }
 
 body {
@@ -45,6 +46,7 @@ a {
 
 .header {
     margin: 0;
+    padding-left: 0;
     width: 100vw;
     height: 5rem;
     position: fixed;
