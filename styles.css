@@ -8,6 +8,7 @@ body {
     padding: 0;
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
 }
 
 h1, h2 {
@@ -120,7 +121,7 @@ a {
 
 .project-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 1rem;
 }
 
@@ -140,7 +141,7 @@ a {
     flex-wrap: wrap;
 }
 
-.project-container > *:hover, #show:hover {
+.project-container > *:hover, button:hover {
     background-color: #272727;
     color: white;
 }
@@ -150,13 +151,58 @@ a {
     color: rgb(126, 112, 215);
 }
 
-#show {
+button {
     width: 10rem;
     font-size: 1rem;
     padding: 0.75rem;
     border: 1px solid black;
     background-color: white;
     border-radius: 30px;
+}
+
+#certifications {
+    padding: 3rem;
+}
+
+.certi-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.certi-container div {
+    padding: 2rem;
+}
+
+#certifications img{
+    width: 25rem;
+    border-radius: 5px;
+}
+
+.nptel {
+    text-align: right;
+}
+
+.nptel img {    
+    float: left;
+    margin-right: 2rem;
+}
+
+.azure {
+    text-align: left;
+}
+
+.azure img {
+    float: right;
+    margin-left: 2rem;
+}
+
+#name {
+    font-size: 2rem;
+}
+
+#from {
+    font-size: 1.25rem;
 }
 
 .contact {
