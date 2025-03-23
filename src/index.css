@@ -97,11 +97,10 @@ html {
 }
 
 /* custom focus style */
-/*
 *:focus {
   outline: none;
   @apply ring-2 ring-purple-500;
-} */
+}
 
 /* accent color */
 ::selection {
