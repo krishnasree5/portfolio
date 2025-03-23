@@ -44,7 +44,7 @@ export const experience = [
     role: "Role1",
     company: "Company 1",
     years: "2020-Present",
-    description: "Led development of core features ...",
+    completion: "#",
     achievements: [
       "Improved application performance by 40%",
       "Led a team of 5 developers",
@@ -55,7 +55,7 @@ export const experience = [
     role: "Role2",
     company: "Company2",
     years: "2018-2020",
-    description: "Developed features for ...",
+    completion: "#",
     achievements: [
       "Developed 3 major features",
       "Reduced bug count by 60%",
@@ -97,9 +97,10 @@ export const projects = [
   },
   {
     title: "Members Only",
-    description: "",
+    description:
+      "A web application that enables users to register, log in and post messages. Implements secure authentication and authorization.",
     image:
-      "A web application that enables users to register, log in, and access exclusive content with secure authentication and authorization",
+      "https://images.unsplash.com/photo-1577563908411-5077b6dc7624?q=80&w=2070&auto=format&fit=crop",
     techStack: ["Express", "Passport.js", "PostgreSQL"],
     liveDemo: "#",
     github: "https://github.com/krishnasree5/membersonly-odinproject",
