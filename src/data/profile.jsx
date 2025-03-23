@@ -2,10 +2,11 @@ export const profile = {
   name: "Krishna Sree",
   role: "Full Stack Developer",
   image:
-    "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=400&h=400&fit=crop",
+    "https://cdn.vectorstock.com/i/500p/08/19/gray-photo-placeholder-icon-design-ui-vector-35850819.jpg",
+  resume: "/KrishnaSree_Resume.pdf",
   social: {
     github: "https://github.com/krishnasree5",
-    linkedin: "https://linkedin.com/gkrishnasree5",
+    linkedin: "https://linkedin.com/in/gkrishnasree5",
     leetcode: "https://leetcode.com/gkrishnasree5",
   },
 };
@@ -21,12 +22,20 @@ export const education = [
     school: "SR University",
     years: "2022-2026",
     grade: "9.6 CGPA",
+    coursework: [
+      "Data Structures and Algorithms",
+      "Database Management Systems",
+      "Operating Systems",
+      "Computer Networks",
+      "Web Development",
+    ],
   },
   {
     degree: "Intermediate in MPC",
     school: "SR Educenter",
     years: "2020-2022",
     grade: "9.5 CGPA",
+    coursework: ["Mathematics", "Physics", "Chemistry"],
   },
 ];
 
@@ -36,12 +45,22 @@ export const experience = [
     company: "Company 1",
     years: "2020-Present",
     description: "Led development of core features ...",
+    achievements: [
+      "Improved application performance by 40%",
+      "Led a team of 5 developers",
+      "Implemented new CI/CD pipeline",
+    ],
   },
   {
     role: "Role2",
     company: "Company2",
     years: "2018-2020",
     description: "Developed features for ...",
+    achievements: [
+      "Developed 3 major features",
+      "Reduced bug count by 60%",
+      "Mentored junior developers",
+    ],
   },
 ];
 
@@ -62,7 +81,7 @@ export const projects = [
       "A tool that allows users to upload files from their local devices to a server or cloud storage.",
     image:
       "https://images.unsplash.com/vector-1742138990008-9757ccea9a69?q=80&w=2360&auto=format&fit=crop",
-    techStack: ["React", "Express", "PostgreSQL"],
+    techStack: ["React", "Express", "Prisma", "Supabase"],
     liveDemo: "#",
     github: "https://github.com/krishnasree5/fileuploader",
   },
@@ -75,6 +94,15 @@ export const projects = [
     techStack: ["React"],
     liveDemo: "https://cv-application-six-gamma.vercel.app/",
     github: "https://github.com/krishnasree5/cv-application",
+  },
+  {
+    title: "Members Only",
+    description: "",
+    image:
+      "A web application that enables users to register, log in, and access exclusive content with secure authentication and authorization",
+    techStack: ["Express", "Passport.js", "PostgreSQL"],
+    liveDemo: "#",
+    github: "https://github.com/krishnasree5/membersonly-odinproject",
   },
 ];
 
