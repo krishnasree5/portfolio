@@ -16,7 +16,7 @@ export default function Navbar({ darkMode, toggleDarkMode }) {
     <nav className="fixed w-full bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm z-50">
       <div className="container mx-auto px-6 py-4">
         <div className="flex justify-between items-center">
-          <h1 className="text-xl font-bold">Portfolio</h1>
+          <h1 className="text-xl font-bold">Krishna Sree</h1>
 
           {/* navbar mobile menu button */}
           <div className="flex items-center gap-4 md:hidden">
