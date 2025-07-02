@@ -1,3 +1,6 @@
+import cfgImage from "../images/cfg1.jpeg";
+import genzeonImage from "../images/genzeon1.jpeg";
+
 export const profile = {
   name: "Krishna Sree",
   role: "Full Stack Developer",
@@ -82,7 +85,7 @@ export const projects = [
     image:
       "https://images.unsplash.com/vector-1742138990008-9757ccea9a69?q=80&w=2360&auto=format&fit=crop",
     techStack: ["React", "Express", "Prisma", "Supabase"],
-    liveDemo: "#",
+    liveDemo: "https://fileuploader-lac.vercel.app/",
     github: "https://github.com/krishnasree5/fileuploader",
   },
   {
@@ -104,6 +107,52 @@ export const projects = [
     techStack: ["Express", "Passport.js", "PostgreSQL"],
     liveDemo: "#",
     github: "https://github.com/krishnasree5/membersonly-odinproject",
+  },
+];
+
+export const hackathons = [
+  {
+    title: "Code For Good 2025",
+    date: "June 2025",
+    description:
+      "We worked on the problem statement given by PRADAN NGO. We built a system that lets field executives collect data from farmers. This system is meant to automate the data collection process, help the NGO's manage farmers better and allow the farmers to have multiple sources of income (by selling carbon credits to industries) and community support.",
+    image: cfgImage,
+    teamSize: "7 members",
+    techStack: ["React", "Node.js", "MongoDB", "Express"],
+    takeaways: [
+      "Learned to work under tight deadlines and pressure",
+      "Improved collaboration skills with diverse team members",
+      "Gained experience in rapid prototyping and MVP development",
+    ],
+  },
+  {
+    title: "GenzVerse",
+    date: "August 2024",
+    description:
+      "Build a document summarizer that helps health officials summarize health contracts.",
+    image: genzeonImage,
+    teamSize: "4 members",
+    techStack: ["Python", "Next.js"],
+    takeaways: [
+      "Enhanced problem-solving skills in a competitive environment",
+      "Learned new frameworks and technologies on the fly",
+      "Developed better time management and prioritization skills",
+    ],
+  },
+  {
+    title: "Smart India Hackathon - Internal",
+    date: "September 2024",
+    description:
+      "Hepled create a carrer guidance platform for students. This platform can be used by students to have awareness on multiple career options, useful resources and mentorship.",
+    image:
+      "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2070&auto=format&fit=crop",
+    teamSize: "6 members",
+    techStack: ["Next.js"],
+    takeaways: [
+      "Gained experience in presenting technical solutions to judges",
+      "Learned to balance technical complexity with user experience",
+      "Improved leadership and team coordination abilities",
+    ],
   },
 ];
 
